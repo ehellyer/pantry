@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true       # no implicit dynamic downcasts
+    strict-raw-types: true   # no bare List / Map without type arguments
+  exclude:
+    - "**/*.g.dart"          # never lint generated code
+    - build/**
+    - ios/**
+
+linter:
+  rules:
+    prefer_const_constructors: true    # the performance rule from the mental-model section
+    always_declare_return_types: true
+    require_trailing_commas: true      # makes dart format produce readable widget trees

@@ -1,0 +1,103 @@
+# ---------------------------------------------------------------------------
+# Miscellaneous
+# ---------------------------------------------------------------------------
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ---------------------------------------------------------------------------
+# VS Code
+# settings.json / launch.json / tasks.json / extensions.json are shared team
+# config and stay in version control; everything else under .vscode/ is
+# per-developer state. Note the `.vscode/*` form (not `.vscode/`) -- Git cannot
+# re-include a file from inside a directory that is itself excluded.
+# ---------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+.vscode/*.local.json
+*.code-workspace
+.history/
+
+# ---------------------------------------------------------------------------
+# IntelliJ / Android Studio
+# ---------------------------------------------------------------------------
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# ---------------------------------------------------------------------------
+# Flutter / Dart / Pub
+# ---------------------------------------------------------------------------
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+/coverage/
+.widget_preview/
+
+# Symbolication and obfuscation output
+app.*.symbols
+app.*.map.json
+
+# ---------------------------------------------------------------------------
+# Platform build artifacts
+# Kept here so they are covered if `flutter create --platforms=...` adds a
+# platform folder later; only ios/ exists in this project today.
+# ---------------------------------------------------------------------------
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/.gradle
+/android/local.properties
+/android/key.properties
+*.jks
+
+**/ios/Flutter/ephemeral/
+**/ios/Pods/
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+**/linux/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+**/web/.dart_tool/
+
+# Xcode per-user state
+**/xcuserdata/
+**/DerivedData/
+
+# ---------------------------------------------------------------------------
+# Test / coverage output
+# ---------------------------------------------------------------------------
+coverage/
+test/.test_coverage.dart
+.test_runner.dart
+
+# ---------------------------------------------------------------------------
+# Flutter Version Management (FVM)
+# ---------------------------------------------------------------------------
+.fvm/
+.fvmrc
+
+# ---------------------------------------------------------------------------
+# Local environment / secrets
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
