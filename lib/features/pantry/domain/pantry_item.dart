@@ -25,7 +25,7 @@ class PantryItem {
   final int quantity;
   final StorageLocation location;
 
-  /// Expiry date, normalised to midnight local time so day arithmetic is exact.
+  /// Expiry date, normalized to midnight local time so day arithmetic is exact.
   final DateTime expiresOn;
 
   /// Whole days from [today] until expiry. Negative once the item has expired.
